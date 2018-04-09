@@ -13,9 +13,6 @@ namespace Xunit.Gherkin.Quick.ProjectConsumer.SearchUsers
         private readonly List<UserModel> _users = new List<UserModel>();
         private UserModel _userResult;
 
-        public SearchUsers(ITestOutputHelper output) : base(output)
-        { }
-
         [Given(@"there are users:")]
         public void There_are_users(DataTable users)
         {

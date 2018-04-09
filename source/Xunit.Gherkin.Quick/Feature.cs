@@ -48,7 +48,7 @@ namespace Xunit.Gherkin.Quick
 
                 try
                 {
-                    matchingStepMethod.method.Invoke(this, methodParamValues);
+                    matchingStepMethod.method.Invoke(this, methodParamValues.ToArray());
                     Output.WriteLine($"{parsedStep.Keyword} {parsedStep.Text}: PASSED");
                 }
                 catch
